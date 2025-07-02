@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/feather-icons"></script>
+ </head>
+ <body>
+
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">LCT</a> 
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        <ul id="menu" class="nav-menu">
+            <li><a href="#beranda"><i data-feather="home"></i>BERANDA</a></li>
+            <li><a href="#tentangsaya">TENTANG SAYA</a></li>
+            <li><a href="#karya">HASIL KARYA</a></li>
+            <li><a href="#kontak">KONTAK</a></li>
+        </ul>
+        </nav>
+    <!--NAVBAR SELESAI-->
+
+    <!--KONTEN-->
+        <div class="konten">
+            <div class="foto" id="beranda">
+                <img src="asset/foto.png" class="img-konten" alt="Profile Foto">
+                <div class="text">
+                    <h2>HALO</h2>
+                </div>
+            </div>
+        </div>
+        <div class="ts" id="tentangsaya">
+            <h2>TENTANG SAYA</h2>
+            <p>Saya Lionel Cristian Timothy, seorang pelajar SMK dengan minat besar di bidang Pengembangan Perangkat Lunak dan Gim. Saat ini, saya sedang memperdalam keterampilan saya dalam beberapa bahasa pemrograman seperti C#, HTML, CSS, dan JavaScript.
+                Sebagai langkah awal menuju karier di dunia teknologi, saya tengah membuat web portofolio untuk menampilkan karya dan proyek yang telah saya kerjakan. Saya percaya bahwa coding bukan hanya tentang menulis baris kode, tetapi juga menciptakan solusi inovatif yang dapat bermanfaat bagi banyak orang.
+                Saya memiliki semangat belajar yang tinggi dan berharap dapat terus mengeksplorasi dunia pengembangan perangkat lunak. Tujuan saya adalah menjadi seorang profesional di bidang coding dan berkontribusi pada industri teknologi di masa depan.</p>
+        </div>
+        <!-- KONTEN SELESAI -->
+        
+        <!-- HASIL KARYA -->
+        <div class="hs" id="karya">
+            <h2>HASIL KARYA</h2>
+        </div>
+        <div class="ss-container">
+            <div class="slide fade">
+                <img src="asset/Form.png" alt="Form Pendaftaran" width="100%">
+            </div>
+            <div class="slide fade">
+                <img src="asset/Kura2.png" alt="Kura-Kura Mario Bros" width="100%">
+            </div>
+            <div class="slide fade">
+                <img src="asset/Tabel.png" alt="Tabel Restoran" width="100%">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div class="text">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <!-- HASIL KARYA SELESAI -->
+        
+        <!-- KONTAK -->
+        <div class="kontak" id="kontak">
+            <h2>KONTAK</h2>
+            <form method="POST">
+                <label for="text">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan Nama" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan Email" required>
+                <label for>Pesan</label>
+                <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis Pesan" required></textarea>
+                <button type="submit" class="tombol">Kirim</button>
+            </form>
+        </div>
+
+    <!-- KONTAK SELESAI -->
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="kiri">
+        </div>
+        <div class="tengah">
+            <div>
+                <i data-feather="map-pin"></i>
+                <p><span>Indonesia</span> Bali, Badung</p>
+            </div>
+            <div>
+                <i data-feather="phone"></i>
+                <p>+62 897-029-5615</p>
+            </div>
+            <div>
+                <i data-feather="mail"></i>
+                <p><a href="mailto:lionelcristiantimothy@gmail.com">lionelcristiantimothy@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="icon">
+            <a href="https://www.instagram.com/xx.lionel" target="_blank"><i data-feather="instagram"></i></a>
+            <a href="https://www.facebook.com/lionel.c.timothy?mibextid=ZbWKwL" target="_blank"><i data-feather="facebook"></i></a>
+            <a href="https://github.com/AlokCoding" target="_blank"><i data-feather="github"></i></a>
+        </div>
+        <p class="copyright">2024 Lionel Cristian Timothy.</p>
+            
+    </footer>
+        <!--FOOTER SELESAI-->
+        <script src="script.js"></script>
+ </body>
+</html>
